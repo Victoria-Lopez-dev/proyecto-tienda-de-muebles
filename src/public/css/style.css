@@ -1,0 +1,167 @@
+*{
+       font-family: 'Montserrat', sans-serif; 
+}
+body{
+    margin: 0px;
+}
+
+/* ----------     navegador      ------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+
+}
+
+.menu{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.item-menu{
+    list-style-type: none;
+}
+.item-link{
+    text-decoration: none;
+    color:#231D8A ;
+    font-weight: 300;
+}
+
+/* ----------     hoja index      ------------*/
+
+
+header{
+    background-color: #ADD9E6;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+    height: 320px;
+    
+
+}
+
+.titulo-blanco{
+    text-align: center;
+}
+
+.cont-padre{
+    margin: 80px 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    border: 2px solid #A0D3A5;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc-card{
+   width: 90%;
+   text-align: center;
+   height: 30px;
+}
+
+.img-card{
+    width: 100%;
+
+}
+
+.boton-ver{
+    padding: 10px;
+    background-color: #A0D3A5;
+    color: #231D8A;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+
+
+/* ----------     footer      ------------*/
+
+footer{
+    background-color: #ADD9E6;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    color: white;
+}
+
+.footer-left{
+    display: flex;
+    justify-content: space-between;
+    width:300px;
+    height: 60px;
+    
+}
+
+.titulo-foot{
+    font-size: 21px;
+}
+
+
+/* ----------     hoja productos      ------------*/
+
+
+.card-prod{
+    width: 250px;
+    height: 480px;
+}
+.titulo-prod{
+    font-size: 20px;
+}
+
+.img-prod{
+    height: 221px;
+}
+
+
+
+/* ----------     hoja form      ------------*/
+
+.titulo-form{
+    margin-left: 40px;
+    color:#2d91b0;
+}
+
+form{
+    margin: 100px;
+}
+.item-form{
+    margin: 20px 0px;
+}
+
+input{
+
+    height: 30px;
+    width: 80%;
+}
+label{
+    font-size: 20px;
+    font-weight: 200;
+    color: #231D8A;
+}
+.boton-agregar{
+    background-color:#188cb0 ;
+    color: white;
+    border: #2d91b0;
+    padding: 10px;
+}
+
+.boton-agregar:active{
+    background-color:#005671
+}

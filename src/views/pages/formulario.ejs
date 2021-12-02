@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/head') %>
+</head>
+<body>
+    <%-include('../partials/nav')%>
+
+    <h1 class="titulo-form">Registrate</h1>
+    <main>
+            <form method="POST" action="/nuevoProducto">
+                <div class="item-form">
+                    <label for="producto" class="form-label">nombre del Producto</label>
+                    <input type="text" class="form-control" id="producto" name="producto">
+                </div>
+                <div class="item-form">
+                    <label for="categoria" class="form-label">categoria</label>
+                    <input type="text" class="form-control" id="categoria" name="categoria">
+                </div>
+
+                <div class="item-form">
+                    <label for="categoria" class="form-label">descripcion</label>
+                    <input type="text" class="form-control" id="categoria" name="descripcion">
+                </div>
+                <div class="item-form">
+                    <label for="precio" class="form-label">precio</label>
+                    <input type="text" class="form-control" id="precio" name="precio">
+                </div>
+      
+
+                <button type="submit" class="boton-agregar">Enviar</button>
+              </form>
+    </main>
+    
+</body>
+</html>

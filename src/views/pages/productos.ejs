@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/head') %>
+</head>
+<body>
+    <%-include('../partials/nav') %>
+
+    <main class="cont-padre">
+      <% data.forEach((prod)=>{%>
+            <div class="card card-prod">
+                <h2 class="titulo-prod"><%= prod.producto%></h2>
+                <img class="img-card img-prod" src="<%=prod.imagen%>" alt="<%= prod.producto%>">
+                <p class="desc-card"><%= prod.descripcion%></p>
+                <p><%= prod.precio%></p>
+                <a class="boton-ver"href="#">Comprar</a>
+            </div>
+    <% }) %>
+
+    </main >
+    
+
+</body>
+</html>

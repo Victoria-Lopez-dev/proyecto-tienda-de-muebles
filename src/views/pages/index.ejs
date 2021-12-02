@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/head') %>
+    
+</head>
+<body>
+
+    <%-include('../partials/nav') %>
+    <header>
+       <h1 class="titulo-blanco">Tienda<br> de<br> Muebles</h1> 
+       <img src="/imagenes/foto-living.jpg" alt="imagen-living">
+    </header>
+    
+    <main class="cont-padre">
+  
+         <% data.forEach((prod)=>{%>
+        <!-- cards categorias -->
+            <div class="card">
+                <img class="img-card" src="<%= prod.imagen%>" alt="imagen=producto">
+                <p class="desc-card"><%= prod.descripcion %> </p>
+                <a class="boton-ver"href="#">Ver Mas</a>
+            </div>
+      <%})%>
+    </main>
+   
+    
+    <footer>
+        <div class="footer-left">
+            <img src="/imagenes/logo.svg" alt="logo Tienda Mueble">
+            <h2 class="titulo-blanco titulo-foot">Tienda de Muebles</h2>
+        </div>
+            <p>Imagenes pertenecientes a <a href="https://www.freepik.es/">https://www.freepik.es/</a></p>
+    
+    </footer>
+</body>
+</html>
