@@ -5,14 +5,13 @@ const databaseConnection = mysql.createConnection({
     user: 'umaun2jeufkzxywt',
     password:'t5QlMlVt4LzhcUrEO8Hl',
     database: 'bkchtwxqza3usxhubiem',
-    
 })
 
 databaseConnection.connect((error)=>{
   if(error) {
     console.log(error)
   } else {
-    console.log('Servidor conectado a MySQL')
+    console.log('Servidor esta conectado a MySQL')
   }
 })
 
