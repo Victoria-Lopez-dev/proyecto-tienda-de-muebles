@@ -27,6 +27,12 @@ nav{
     color:#231D8A ;
     font-weight: 300;
 }
+.boton-nav{
+    display:none;
+}
+.flexItem{
+    display: block;
+}
 
 /* ----------     hoja index      ------------*/
 
@@ -131,7 +137,7 @@ footer{
 
 
 
-/* ----------     hoja form      ------------*/
+/* ----------     hoja formulario      ------------*/
 
 .titulo-form{
     margin-left: 40px;
@@ -168,4 +174,92 @@ label{
 
 .boton-agregar:active{
     background-color:#005671
+}
+
+
+
+/* ----------     media queries      ------------*/
+@media(max-width:768px){
+   
+    .cont-padre{
+        margin: 80px 13px;
+    }
+    .card{ 
+        width: 215px;
+    }
+}
+
+@media(max-width:400px){
+     /*----------- nav ---------------*/
+    nav{
+        flex-wrap: wrap;
+    }
+    .boton-nav{
+        display: block;
+        background-color:#188cb0 ;
+        color: white;
+    
+        padding: 10px;
+
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        width: 100%;
+    }
+    /*----------- index ---------------*/
+    h1{
+        z-index: 1;
+        color:rgb(67, 118, 135);
+        text-shadow: aliceblue 2px 2px;
+    }
+
+    .cont-padre{
+        margin:13px 0px;
+        grid-template-columns: repeat(4,1fr);
+
+    }
+    .card{ 
+        grid-column: 2/4;
+    }
+    header{
+        flex-direction: column;
+        height: 211px;
+        width:100%;
+        padding:0px;
+    }
+
+    header > img{
+       width: 90%;
+        position: absolute;
+        height: 184px;
+    }
+    footer{
+        flex-direction: column;
+        height: fit-content;
+        padding:5px 16px;
+    }
+    footer > p{
+        font-size: 10px;
+        
+    }
+
+ /*----------- formulario ---------------*/
+    form{
+        width:100%;
+        margin: 20px 0px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-form{
+        width:80%;
+        flex-direction: column;
+       
+    }
+    .form-control{
+        width:100%;
+    }
 }
