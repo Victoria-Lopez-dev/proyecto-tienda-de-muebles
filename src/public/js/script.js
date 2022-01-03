@@ -2,7 +2,6 @@ let menuBoton= document.querySelector('.boton-nav');
 let menu= document.querySelector('.menu');
 let flag=false;
 
-menu.style.display="none";
 
 menuBoton.addEventListener('click',()=>{
     if(flag=== false){
