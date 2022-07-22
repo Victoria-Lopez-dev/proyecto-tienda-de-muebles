@@ -1,10 +1,13 @@
 const mysql = require('mysql2')
 
 const databaseConnection = mysql.createConnection({
-  host:'bcq7wkjgujvunj972pbo-mysql.services.clever-cloud.com',
-  user:'uz6yxqqazf4h6jyo',
-  database:'bcq7wkjgujvunj972pbo',
-  password:'3d0xCh3oVJFC71E17rbN',
+  host:'localhost',
+  user:'root',
+  database:'tiendaMueble',
+  // host:'bcq7wkjgujvunj972pbo-mysql.services.clever-cloud.com',
+  // user:'uz6yxqqazf4h6jyo',
+  // database:'bcq7wkjgujvunj972pbo',
+  // password:'3d0xCh3oVJFC71E17rbN',
 })
 
 databaseConnection.connect((error)=>{
