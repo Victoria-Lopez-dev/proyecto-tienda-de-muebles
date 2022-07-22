@@ -4,10 +4,10 @@ const databaseConnection = mysql.createConnection({
   host:'localhost',
   user:'root',
   database:'tiendaMueble',
-  // host:'bcq7wkjgujvunj972pbo-mysql.services.clever-cloud.com',
-  // user:'uz6yxqqazf4h6jyo',
-  // database:'bcq7wkjgujvunj972pbo',
-  // password:'3d0xCh3oVJFC71E17rbN',
+  // host:process.env.HOST,
+  // user:process.env.USER,
+  // database:process.env.DB,
+  // password:process.env.PASS,
 })
 
 databaseConnection.connect((error)=>{
